@@ -115,6 +115,12 @@ section {
     position: relative;
 }
 
+.img-test.show-animate .animate {
+    animation: showRight 1s ease forwards;
+      animation-delay: 0s;
+    animation-delay: calc(.2s * var(--i));
+}
+
 .main {
     display: flex;
     justify-content: center;
