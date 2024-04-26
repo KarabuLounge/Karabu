@@ -6,7 +6,7 @@
 	$notes = $_POST['notes'];
 
 	// Database connection
-	$conn = new mysqli('id22091158_karabu','id22091158_root','Ananth@2003','karabu');
+	$conn = new mysqli('localhost','id22091158_root','Ananth@2003','id22091158_karabu');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
