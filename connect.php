@@ -1,7 +1,7 @@
 <?php
 	$fullName = $_POST['fullName'];
 	$email = $_POST['email'];
-    $number = $_POST['number'];
+    	$number = $_POST['number'];
 	$group = $_POST['group'];
 	$notes = $_POST['notes'];
 
