@@ -2,7 +2,7 @@
 	$fullName = $_POST['fullName'];
 	$email = $_POST['email'];
     	$number = $_POST['number'];
-	$group = $_POST['group'];
+	$groupsize = $_POST['groupsize'];
 	$notes = $_POST['notes'];
 
 	// Database connection
@@ -11,8 +11,8 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(fullName, email, number, group, notes) values(?, ?, ?, ?, ?)");
-		$stmt->bind_param("ssiis", $fullName, $email, $number, $group, $notes);
+		$stmt = $conn->prepare("insert into registration(fullName, email, number, groupsize, notes) values(?, ?, ?, ?, ?)");
+		$stmt->bind_param("ssiis", $fullName, $email, $number, $groupsize, $notes);
 		$execval = $stmt->execute();
 		echo $execval;
 		echo "Registration successfully...";
