@@ -175,14 +175,14 @@
     <section class="contact" id="contact">
         <h2 class="heading">Inquire <span>Now</span><span class="nothing" style="--i:1;"></span></h2>
 
-        <form action="#">
+        <form action="connect.php" method="post">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" required name="fullName">
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email" required>
+                    <input type="text" placeholder="Email" required name="email">
                     <span class="focus"></span>
                 </div>
 
@@ -190,11 +190,11 @@
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="number" placeholder="Mobile Number" required name="number">
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="number" placeholder="Group Size" required>
+                    <input type="number" placeholder="Group Size" required name="group">
                     <span class="focus"></span>
                 </div>
 
@@ -202,7 +202,7 @@
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Additional notes" required></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Additional notes" required name="notes"></textarea>
                 <span class="focus"></span>
 
                 <span class="nothing" style="--i:7;"></span>
